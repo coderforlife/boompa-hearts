@@ -5,16 +5,16 @@ The server is written in Python and the front-end is written in JavaScript. They
 
 To get the server running, first you need to install the Tornado and socket.io libraries:
 
-'''shell
+```shell
 pip3 install python-socketio tornado
-'''
+```
 
 Then the server can be run as follows:
 
-'''shell
+```shell
 python3 server.py
-'''
+```
 
-which will run on port 8000 by default. Using the argument --port this can be changed. The listening address is by default everything, but this can be changed as well with --address.
+which will run on port 8000 by default. Using the argument `--port` this can be changed. The listening address is by default everything, but this can be changed as well with `--address`.
 
-The / address of the server simply generates a new game name using 3 random words and redirects to it. Once in a game, one of the players can share their game link with other people they want to play with.
+The `/` address of the server simply generates a new game name using 3 random words and redirects to it. Once in a game, one of the players can share their game link with other people they want to play with.
