@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>Boompa-Hearts</title>
+ <meta name="description" content="Boompa-Hearts">
+ <meta name="author" content="Jeff Bush and Angela Hicks-Bush">
+ <link rel="stylesheet" href="/static/styles.css?v=1.2">
+ <script src="/static/socket.io.min.js"></script>
+ <script src="/static/script.js?v=1.2"></script>
+ <link rel="icon" type="image/png" href="/static/favicon.png"><link rel="icon" type="image/svg+xml" href="/static/favicon.svg"><link rel="apple-touch-icon" href="/static/favicon.png">
+ <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+<body class="waiting">
+ <div id="overlay"><div id="message"></div></div>
+ <div id="help">?</div>
+ <div id="status"><table><tr><td>Hand #<span class="hand"></span></td><td>Tricks</td><td>Score</td></tr><tr><td class="names-tb"></td><td class="tricks-tb"></td><td class="score-tb">0</td></tr><tr><td class="names-lr"></td><td class="tricks-lr"></td><td class="score-lr">0</td></tr></table></div>
+ <input type="button" id="action">
+ <div id="left" class="player"><div class="hand"></div><div class="name"></div></div>
+ <div id="right" class="player"><div class="hand"></div><div class="name"></div></div>
+ <div id="top" class="player"><div class="hand"></div><div class="name"></div></div>
+ <div id="bottom" class="player"><div class="hand"></div><div class="name"></div></div>
+ <div id="current-hand"></div>
+ <div id="last-hand"></div>
+</body>
+</html>
